@@ -22,15 +22,15 @@
 
 #define BUTTON_PIN 14  // Push button
 
-const char *ssid = "TECNO POP 7 Pro";
-const char *password = "beyond,56";
-const char *backendUrl = "https://getsignedurl-387799109589.europe-west1.run.app";  // Your GCF endpoint
+const char *ssid = "YOUR_SSID";
+const char *password = "YOUR_WIFI_PASSOWRD";
+const char *backendUrl = "YOUR_BACKEND_URL";  // Your GCF endpoint
 
 // ------------------ COURSE INFO ------------------
-const char *COURSE_CODE = "EEE313";
-const int COURSE_LEVEL = 300;  // 100, 200, 300, ...
+const char *COURSE_CODE = "COURSE_CODE"; //eg. EEE313, ECE102, etc.
+const int COURSE_LEVEL = "COURSE_LEVEL";  // eg. 100, 200, 300, ... // Remove the quotes because it would be a number.
 
-const char *DEVICE_ID = "esp32a1";
+const char *DEVICE_ID = "DEVICE_ID"; //eg. esp32a1; you can create an ID for each device.
 
 // Audio config
 #define SAMPLE_RATE 16000

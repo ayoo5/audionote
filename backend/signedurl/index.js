@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 const storage = new Storage();
-const BUCKET = "futa-lecture-recordings";
+const BUCKET = "YOUR_BUCKET_NAME";
 
 // ------------------ Helpers ------------------
 
