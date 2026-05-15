@@ -6,6 +6,14 @@
   ESP32-powered asynchronous lecture transcription and archival system with automated cloud upload, cloud-based speech-to-text processing, and structured Google Shared Drive organization.
 </div>
 
+<div align="center">
+
+| Initial Build | Final Enclosed Build <br> (without 3D printed enclosure) |
+| :--------: | :--------: |
+| <img src="url" width="200" height="200">    | <img src="url" width="200" height="200">   |
+
+</div>
+
 # Overview
 
 Audionote is a low-cost embedded lecture transcription and archival platform designed for educational environments with unreliable connectivity and limited infrastructure.
