@@ -10,7 +10,7 @@
 
 | Initial Build Setup | Final Enclosed Build <br> (not the 3D printed enclosure) |
 | :--------: | :--------: |
-| <img src="docs/08-assets/demo-photos/Audionote Stage 2 Development.jpg" width="200" height="200">    | <img src="docs/08-assets/demo-photos/Enclosed Audionote Device.jpeg" width="200" height="200">   |
+| <img src="docs/08-assets/demo-photos/Audionote Stage 2 Development.jpg" width="200" height="250">    | <img src="docs/08-assets/demo-photos/Enclosed Audionote Device.jpeg" width="200" height="250">   |
 
 </div>
 
@@ -88,10 +88,7 @@ The system is particularly useful for:
 
 # System Architecture
 
-```text
-Picture goes here
-```
-<img src="url" alt="System architecture"/>
+<img src="docs/08-assets/diagrams/Full System Architecture.png" alt="System architecture"/>
 
 Additional architecture documentation:
 
@@ -122,6 +119,11 @@ The Audionote embedded hardware platform is built around the ESP32 microcontroll
 * Battery and power management system
 * Push-button recording interface
 * Portable enclosure system
+
+
+## Hardware Block Diagram
+
+<img src="docs/08-assets/diagrams/Hardware Block Diagram.png" alt="Hardware Block Diagram"/>
 
 Detailed hardware documentation:
 
@@ -166,9 +168,7 @@ The firmware is responsible for:
 
 ## Firmware Pipeline
 
-```text
-Picture goes here
-```
+<img src="docs/08-assets/diagrams/Firmware Pipleine.png" alt="Firmware Pipeline"/>
 
 ## Firmware Features
 
@@ -256,9 +256,7 @@ Responsible for:
 
 ## Backend Pipeline
 
-```text
-Picture goes here
-```
+<img src="docs/08-assets/diagrams/Backend Pipeline.png" alt="Backend Pipeline"/>
 
 Backend documentation:
 
