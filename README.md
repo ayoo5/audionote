@@ -106,7 +106,7 @@ lecture-transcription-iot/
 ├── hardware/          # Schematics, wiring, enclosure files
 ├── docs/              # Full technical documentation
 ├── media/             # Demo assets and presentation materials
-└── README.md          #You are here 🙂
+└── README.md          # You are here 🙂
 ```
 
 # Hardware Overview
