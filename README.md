@@ -91,6 +91,7 @@ The system is particularly useful for:
 ```text
 Picture goes here
 ```
+<img src="url" alt="System architecture"/>
 
 Additional architecture documentation:
 
