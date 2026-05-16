@@ -107,12 +107,6 @@ The system is particularly useful for:
 12. Files become accessible through Shared Drive
 ```
 
-Additional architecture documentation:
-
-* [System Architecture](docs/01-overview/system-architecture.md)
-* [End-to-End Dataflow](docs/05-system-integration/end-to-end-dataflow.md)
-* [Cloud Run Architecture](docs/04-backend/cloud-run-architecture.md)
-
 # Repository Structure
 
 ```text
@@ -126,13 +120,37 @@ lecture-transcription-iot/
 └── README.md          # You are here 🙂
 ```
 
+# Quick Start Roadmap
 
-## Hardware Block Diagram
+This project is organized as a guided end-to-end engineering workflow.
 
-<img src="docs/08-assets/diagrams/Hardware Block Diagram.png" alt="Hardware Block Diagram"/>
+The recommended implementation path is:
 
+```text
+Firmware Environment Setup
+        ↓
+ESP32 Firmware Upload
+        ↓
+Hardware Component Acquisition
+        ↓
+Incremental Hardware Assembly & Testing
+        ↓
+Power System Integration
+        ↓
+Backend Deployment (Google Cloud)
+        ↓
+Shared Drive & Domain Setup
+        ↓
+Final System Integration
+        ↓
+Enclosure & Portability Upgrades
+        ↓
+Testing, Optimization & Contributions
+```
 
-# Firmware Overview
+The sections below guide you through each stage of the build process in the recommended engineering order.
+
+## Stage 1 — Firmware Development Environment
 
 The firmware is responsible for:
 
@@ -147,11 +165,163 @@ The firmware is responsible for:
 
 <img src="docs/08-assets/diagrams/Firmware Pipleine.png" alt="Firmware Pipeline"/>
 
+Before assembling the hardware, first prepare the ESP32 firmware environment and confirm that firmware can be successfully uploaded to the board.
 
-## Backend Pipeline
+This stage includes:
+
+- Installing Arduino IDE
+- Installing the ESP32 board package
+- Installing required firmware libraries
+- Configuring the firmware project
+- Verifying serial communication
+- Uploading firmware to the ESP32
+
+Continue to:
+
+→ [Firmware Setup](docs/03-firmware/esp32-setup.md)
+
+
+## Stage 2 — Hardware Components & BOM
+
+After validating the firmware environment, acquire the required hardware components and development materials.
+
+This section includes:
+
+- Main embedded components
+- Power system components
+- Wiring materials
+- Development accessories
+- Optional enclosure materials
+
+Continue to:
+
+→ [Bill of Materials](docs/02-hardware/bill-of-materials.md)
+
+
+## Stage 3 — Hardware Assembly & Incremental Testing
+
+The hardware integration process is intentionally broken into incremental validation stages to simplify debugging and subsystem verification.
+
+### Hardware Block Diagram
+
+<img src="docs/08-assets/diagrams/Hardware Block Diagram.png" alt="Hardware Block Diagram"/>
+
+This stage includes:
+
+- ESP32 basic validation
+- INMP441 microphone integration
+- SD card module integration
+- Audio recording verification
+- Chunk upload validation
+- Hardware troubleshooting checkpoints
+
+Continue to:
+
+→ [Hardware Assembly Guide](docs/02-hardware/assembly-guide.md)
+
+
+## Stage 4 — Power System Integration
+
+After validating the core audio and upload system, integrate the portable power subsystem.
+
+This stage includes:
+
+- Battery integration
+- TP4056 charging module setup
+- MT3608 voltage regulation
+- Power stability testing
+- Brownout prevention
+- Safe portable deployment
+
+Continue to:
+
+→ [Power System Documentation](docs/02-hardware/power-system.md)
+
+
+## Stage 5 — Backend Infrastructure Setup
+
+Deploy the Google Cloud backend services required for upload orchestration and transcription.
+
+### Backend Pipeline
 
 <img src="docs/08-assets/diagrams/Backend Pipeline.png" alt="Backend Pipeline"/>
 
+This stage includes:
+
+- Google Cloud project setup
+- Cloud Run deployment
+- Signed URL service setup
+- Auto-transcription service setup
+- Storage bucket configuration
+- IAM permissions configuration
+
+Continue to:
+
+→ [Backend Deployment Guide](docs/04-backend/deployment-guide.md)
+
+
+## Stage 6 — Shared Drive & Domain Configuration
+
+Configure the shared archival environment for automated transcript organization.
+
+This stage includes:
+
+- Google Workspace setup
+- Shared Drive creation
+- Domain configuration
+- Drive API integration
+- Folder structure automation
+
+Continue to:
+
+→ [Shared Drive Setup Guide](docs/04-backend/shared-drive-integration.md)
+
+
+## Stage 7 — Final Integration & Enclosure Assembly
+
+Combine all validated subsystems into the final portable deployment configuration.
+
+### Final Prototype
+
+<img src="docs/08-assets/demo-photos/Top View of Audionote.jpeg" alt="Final Prototype" width="300" height="500"/>
+
+This stage includes:
+
+- Internal component mounting
+- Cable management
+- Enclosure assembly
+- Thermal considerations
+- Wearable mounting system integration
+- Final operational testing
+
+Continue to:
+
+→ [Final System Integration](docs/05-system-integration/full-system-integration.md)
+
+
+## Stage 8 — Optional Upgrades & Contributions
+
+Audionote is designed as a modular and extensible embedded systems platform.
+
+Optional enhancements include:
+
+- 3D printed enclosure upgrades
+- Alternative speech-to-text models
+- OTA firmware updates
+- Noise suppression pipelines
+- Custom PCB development
+- Mobile configuration systems
+
+Contributors and builders are encouraged to:
+
+- share their builds,
+- submit pull requests,
+- experiment with backend architectures,
+- and improve subsystem reliability.
+
+Continue to:
+
+→ [Contributing Guide](CONTRIBUTING.md)
 
 
 ## Additional Resources: (Might remove if not needed again)
