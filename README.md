@@ -167,7 +167,7 @@ Detailed hardware documentation:
 
 Full hardware details:
 
-* [Complete BOM](docs/02-hardware/bill-of-materials.md) [Get these firstly]
+* [Complete BOM](docs/02-hardware/bill-of-materials.md) [Order these firstly]
 
 
 # Firmware Overview
