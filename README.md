@@ -206,7 +206,7 @@ The firmware is responsible for:
 1. Install Arduino IDE
 2. Install ESP32 board support package
 3. Clone this repository
-4. Open `esp32_audio_uploader.ino`
+4. Open `audionote.ino`
 5. Configure Wi-Fi credentials
 6. Configure backend endpoint
 7. Select ESP32 Dev Module
@@ -215,11 +215,7 @@ The firmware is responsible for:
 Detailed firmware documentation:
 
 * [Firmware Overview](docs/03-firmware/firmware-overview.md)
-* [ESP32 Setup](docs/03-firmware/esp32-setup.md)
 * [Firmware Architecture](docs/03-firmware/firmware-architecture.md)
-* [Audio Recording Pipeline](docs/03-firmware/audio-recording-pipeline.md)
-* [Chunk Upload System](docs/03-firmware/chunk-upload-system.md)
-* [Memory Management](docs/03-firmware/memory-management.md)
 * [Firmware Troubleshooting](docs/03-firmware/troubleshooting-firmware.md)
 
 # Backend Overview
@@ -263,7 +259,6 @@ Backend documentation:
 * [Signed URL Service](docs/04-backend/signed-url-service.md)
 * [Auto-Transcribe Service](docs/04-backend/auto-transcribe-service.md)
 * [Speech-to-Text Pipeline](docs/04-backend/speech-to-text-pipeline.md)
-* [Shared Drive Integration](docs/04-backend/shared-drive-integration.md)
 * [Deployment Guide](docs/04-backend/deployment-guide.md)
 
 ---
@@ -284,6 +279,7 @@ Detailed setup guides:
 * [Authentication and Security](docs/04-backend/authentication-and-security.md)
 * [Deployment Guide](docs/04-backend/deployment-guide.md)
 * [Custom Domain Setup](docs/04-backend/custom-domain-setup.md)
+* [Shared Drive Integration](docs/04-backend/shared-drive-integration.md)
 
 Useful external references:
 
