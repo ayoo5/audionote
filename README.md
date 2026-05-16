@@ -8,9 +8,9 @@
 
 <div align="center">
 
-| Initial Build | Final Enclosed Build <br> (without 3D printed enclosure) |
+| Initial Build Setup | Final Enclosed Build <br> (not the 3D printed enclosure) |
 | :--------: | :--------: |
-| <img src="url" width="200" height="200">    | <img src="url" width="200" height="200">   |
+| <img src="docs/08-assets/demo-photos/Audionote Stage 2 Development.jpg" width="200" height="200">    | <img src="docs/08-assets/demo-photos/Enclosed Audionote Device.jpeg" width="200" height="200">   |
 
 </div>
 
