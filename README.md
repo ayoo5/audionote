@@ -90,6 +90,23 @@ The system is particularly useful for:
 
 <img src="docs/08-assets/diagrams/Full System Architecture.png" alt="System architecture"/>
 
+## End-to-End Operational Workflow
+
+```text
+1. Lecturer powers the device
+2. ESP32 initializes peripherals
+3. Audio is captured from the INMP441 microphone
+4. Audio is encoded into WAV format
+5. Recording is stored locally on SD card
+6. Recording session stops
+7. Wi-Fi connection is detected
+8. Audio file uploads in chunks to backend
+9. Cloud backend processes uploaded recording
+10. Speech-to-text transcription is generated
+11. Audio and transcript are archived automatically
+12. Files become accessible through Shared Drive
+```
+
 Additional architecture documentation:
 
 * [System Architecture](docs/01-overview/system-architecture.md)
@@ -287,23 +304,6 @@ Useful external references:
 * [Google Speech-to-Text Documentation](https://cloud.google.com/speech-to-text/docs)
 * [Google Drive API Documentation](https://developers.google.com/drive)
 
-# End-to-End Operational Workflow
-
-```text
-1. Lecturer powers the device
-2. ESP32 initializes peripherals
-3. Audio is captured from the INMP441 microphone
-4. Audio is encoded into WAV format
-5. Recording is stored locally on SD card
-6. Recording session stops
-7. Wi-Fi connection is detected
-8. Audio file uploads in chunks to backend
-9. Cloud backend processes uploaded recording
-10. Speech-to-text transcription is generated
-11. Audio and transcript are archived automatically
-12. Files become accessible through Shared Drive
-```
-
-Additional workflow documentation:
+Additional Resources:
 
 * Put somehing here?
