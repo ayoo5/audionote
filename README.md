@@ -1,8 +1,7 @@
 <div align="center">
-  <img src="path/to/your/logo.png" alt="Audionote Logo" width="200" />
+  <img src="docs/08-assets/diagrams/Audionote logo.png" alt="Audionote Logo" width="250" />
   <br>
-  Audionote
-  
+  <h3 style="margin-bottom: 0; line-height: 1;"><strong>Audionote</strong></h3>
   ESP32-powered asynchronous lecture transcription and archival system with automated cloud upload, cloud-based speech-to-text processing, and structured Google Shared Drive organization.
 </div>
 
