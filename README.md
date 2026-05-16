@@ -382,5 +382,5 @@ The troubleshooting documentation also includes:
 
 Continue to:
 
-→ [General Troubleshooting Guide](docs/07-testing/troubleshooting.md)ot needed again)
+→ [General Troubleshooting Guide](docs/07-testing/troubleshooting.md)
 
