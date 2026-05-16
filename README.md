@@ -129,10 +129,8 @@ Detailed hardware documentation:
 
 * [Hardware Overview](docs/02-hardware/hardware-overview.md)
 * [Bill of Materials](docs/02-hardware/bill-of-materials.md)
-* [Wiring Guide](docs/02-hardware/wiring-guide.md)
 * [Schematic Diagram](docs/02-hardware/schematic-diagram.md)
 * [Power System](docs/02-hardware/power-system.md)
-* [Enclosure Design](docs/02-hardware/enclosure-design.md)
 * [Assembly Guide](docs/02-hardware/assembly-guide.md)
 
 ---
