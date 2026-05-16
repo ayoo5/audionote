@@ -317,13 +317,70 @@ Contributors and builders are encouraged to:
 - share their builds,
 - submit pull requests,
 - experiment with backend architectures,
-- and improve subsystem reliability.
+- improve subsystem reliability,
+- and extend the platform into new educational or embedded use cases.
 
 Continue to:
 
 → [Contributing Guide](CONTRIBUTING.md)
 
 
-## Additional Resources: (Might remove if not needed again)
+## Stage 9 — Engineering Analysis & System Evaluation
 
-* Put somehing here?
+This repository includes measured engineering analysis and implementation tradeoff documentation intended to support:
+
+- reproducibility,
+- system evaluation,
+- embedded optimization,
+- and academic engineering analysis.
+
+Included analysis areas:
+
+- memory usage measurements
+- upload latency analysis
+- storage utilization analysis
+- chunk upload optimization
+- backend processing latency
+- power consumption measurements
+- reliability observations
+- embedded systems tradeoffs
+
+These documents are especially useful for:
+
+- embedded systems learners,
+- engineering students,
+- firmware developers,
+- and contributors seeking to optimize or extend the system.
+
+Continue to:
+
+→ [Engineering Analysis](docs/06-analysis/build-analysis.md)
+
+
+## Stage 10 — Troubleshooting & Debugging
+
+Due to the multi-domain nature of the project (embedded systems, cloud infrastructure, storage systems, networking, and power electronics), troubleshooting documentation is provided throughout the repository.
+
+Common troubleshooting areas include:
+
+- ESP32 flashing failures
+- SD card mounting issues
+- I2S microphone configuration problems
+- distorted or clipped audio
+- Wi-Fi upload instability
+- Cloud authentication failures
+- Speech-to-text API errors
+- power instability and brownouts
+- backend deployment failures
+
+The troubleshooting documentation also includes:
+
+- incremental validation checkpoints,
+- expected subsystem outputs,
+- debugging methodology,
+- and common failure recovery procedures.
+
+Continue to:
+
+→ [General Troubleshooting Guide](docs/07-testing/troubleshooting.md)ot needed again)
+
