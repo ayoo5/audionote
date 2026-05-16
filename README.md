@@ -167,7 +167,7 @@ Detailed hardware documentation:
 
 Full hardware details:
 
-* [Complete BOM](docs/02-hardware/bill-of-materials.md)
+* [Complete BOM](docs/02-hardware/bill-of-materials.md) [Get these firstly]
 
 
 # Firmware Overview
@@ -196,7 +196,7 @@ The firmware is responsible for:
 * Memory-aware streaming buffers
 * Automatic recording session handling
 
-## Firmware Setup
+## Firmware Setup [Get started with building here. 👇]
 
 ### Requirements
 
@@ -218,7 +218,7 @@ The firmware is responsible for:
 #include "driver/i2s.h"
 ```
 
-### Uploading Firmware
+### Uploading Firmware [The Steps. 🪜]
 
 1. Install Arduino IDE
 2. Install ESP32 board support package
@@ -304,6 +304,8 @@ Useful external references:
 * [Google Speech-to-Text Documentation](https://cloud.google.com/speech-to-text/docs)
 * [Google Drive API Documentation](https://developers.google.com/drive)
 
-Additional Resources:
+## Additional Resources:
 
 * Put somehing here?
+
+### If you missed it, get started at the Firmware Setup section above! 👆
