@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/08-assets/diagrams/Audionote logo.png" alt="Audionote Logo" width="250" />
+  <img src="docs/08-assets/diagrams/audionote-logo.png" alt="Audionote Logo" width="250" />
   <br>
   <h3 style="margin-bottom: 0; line-height: 1;"><strong>Audionote</strong></h3>
   
