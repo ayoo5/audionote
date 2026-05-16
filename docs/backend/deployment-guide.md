@@ -30,7 +30,7 @@ Responsible for:
 
 ## Backend Pipeline
 
-<img src="docs/08-assets/diagrams/Backend Pipeline.png" alt="Backend Pipeline"/>
+<img src="/docs/08-assets/diagrams/Backend Pipeline.png" alt="Backend Pipeline"/>
 
 Backend documentation:
 
