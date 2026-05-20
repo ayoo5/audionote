@@ -155,7 +155,7 @@ Audionote uses the ESP32 I2S peripheral to receive digital audio from the microp
 
 ## Recommended Wiring Diagram
 
-![INMP441 Wiring](.../08-assets/wiring/inmp441-wiring.png)
+<img src="/hardware/wiring/ESP 32 Board and INMP441.png" alt="INMP441 Wiring"/>
 
 Source: (link here) [DroneBot Workshop 2022](...)
 
