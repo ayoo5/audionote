@@ -27,7 +27,7 @@ Install ESP32 Board Package
         ↓
 Install Required Libraries
         ↓
-Clone Repository
+Download the Firmware Folder
         ↓
 Configure Firmware
         ↓
@@ -235,20 +235,12 @@ After installation:
 
 ---
 
-# 6. Clone the Repository
-
-Clone the Audionote repository locally:
-
-```bash
-git clone https://github.com/yourusername/lecture-transcription-iot.git
-```
-
-Or download the ZIP manually from GitHub.
+# 6. Download the [Firmware Folder](...)
 
 Open:
 
 ```text
-firmware/esp32_audio_uploader/esp32_audio_uploader.ino
+firmware/audionote/audionote.ino
 ```
 
 inside Arduino IDE.
