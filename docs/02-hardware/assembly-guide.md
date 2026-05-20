@@ -235,7 +235,7 @@ Expected result:
 As you try to get the INMP441 mic to work, you may (most likely) face problems ensuring that your connections are secure and that the audio is actually being captured.
 
 To test and ensure that your mic is working well and performing as it ought to:
-* Download the [INMP441 test code](...) (courtesy of DroneBot Workshop).
+* Download the [INMP441 test code](/firmware/tests/microphone_test/DroneBot_INMP441_File.ino) (courtesy of DroneBot Workshop).
 * Upload it to your ESP 32 board
 * Open your Serial Plotter to see the output waveform.
 
