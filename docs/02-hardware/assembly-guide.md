@@ -157,7 +157,7 @@ Audionote uses the ESP32 I2S peripheral to receive digital audio from the microp
 
 <img src="/hardware/wiring/ESP 32 Board and INMP441.png" alt="INMP441 Wiring" width = 600 />
 
-Source: (link here) [DroneBot Workshop 2022](...)
+Source: [DroneBot Workshop](https://dronebotworkshop.com/esp32-i2s/)
 
 | INMP441 Pin | ESP32 Pin |
 | ----------- | --------- |
@@ -235,11 +235,11 @@ Expected result:
 As you try to get the INMP441 mic to work, you may (most likely) face problems ensuring that your connections are secure and that the audio is actually being captured.
 
 To test and ensure that your mic is working well and performing as it ought to:
-* Download the INMP441 test code
+* Download the [INMP441 test code](...) (courtesy of DroneBot Workshop).
 * Upload it to your ESP 32 board
 * Open your Serial Plotter to see the output waveform.
 
-Source: (link here) [DroneBot Workshop 2022](...)
+Source: [DroneBot Workshop](https://dronebotworkshop.com/esp32-i2s/)
 
 ## Correct Audio Waveform Test Diagram
 
