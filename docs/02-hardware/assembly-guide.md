@@ -86,7 +86,7 @@ Continue to:
 
 # Initial Device Development Image
 
-![Initial Device Development](../08-assets/demo-photos/Audionote Stage 2 Development.jpg)
+<img src="/docs/08-assets/demo-photos/Audionote Stage 2 Development.jpg" alt="Initial Device Development" width = 350 height = 450/>
 
 ---
 
