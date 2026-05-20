@@ -86,7 +86,7 @@ Continue to:
 
 # Initial Device Development Image
 
-![Initial Device Development](../08-assets/)
+![Initial Device Development](../08-assets/demo-photos/Audionote Stage 2 Development.jpg)
 
 ---
 
@@ -155,7 +155,9 @@ Audionote uses the ESP32 I2S peripheral to receive digital audio from the microp
 
 ## Recommended Wiring Diagram
 
-![INMP441 Wiring](../08-assets/wiring/inmp441-wiring.png)
+![INMP441 Wiring](.../08-assets/wiring/inmp441-wiring.png)
+
+Source: (link here) [DroneBot Workshop 2022](...)
 
 | INMP441 Pin | ESP32 Pin |
 | ----------- | --------- |
@@ -262,10 +264,6 @@ This is one of the most important reliability features of Audionote.
 ---
 
 # SD Card Wiring
-
-## Recommended Wiring Diagram
-
-![SD Card Wiring](../08-assets/wiring/sdcard-wiring.png)
 
 | SD Module Pin | ESP32 Pin |
 | ------------- | --------- |
