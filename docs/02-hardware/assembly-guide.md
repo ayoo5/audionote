@@ -155,7 +155,7 @@ Audionote uses the ESP32 I2S peripheral to receive digital audio from the microp
 
 ## Recommended Wiring Diagram
 
-<img src="/hardware/wiring/ESP 32 Board and INMP441.png" alt="INMP441 Wiring"/>
+<img src="/hardware/wiring/ESP 32 Board and INMP441.png" alt="INMP441 Wiring" width = 600 />
 
 Source: (link here) [DroneBot Workshop 2022](...)
 
@@ -245,7 +245,7 @@ Source: (link here) [DroneBot Workshop 2022](...)
 
 The correct audio waveform for a silent room is shown below:
 
-<img width="784" height="490" alt="Correct audio wave for silence" src="https://github.com/user-attachments/assets/f4c3a4fe-d5b0-48cb-a47c-6f3666bff4eb" />
+<img width="500" alt="Correct audio wave for silence" src="https://github.com/user-attachments/assets/f4c3a4fe-d5b0-48cb-a47c-6f3666bff4eb" />
 
 Note:
 
