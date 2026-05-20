@@ -235,7 +235,9 @@ After installation:
 
 ---
 
-# 6. Download the [Firmware Folder](...)
+# 6. Download the Firmware Folder
+
+Download the folder [here](/firmware)
 
 Open:
 
