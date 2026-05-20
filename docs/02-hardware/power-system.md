@@ -124,7 +124,7 @@ to create a rechargeable portable embedded power platform.
 
 ## Recommended Wiring Diagram
 
-![Power System Wiring](...)
+![Power System Wiring](/docs/08-assets/diagrams/Power Management System Schematic.png)
 
 ---
 
