@@ -308,7 +308,7 @@ git clone https://github.com/Ayoo5/audionote
 Then navigate into the repository:
 
 ```bash
-cd lecture-transcription-iot
+cd audionote
 ```
 
 ---
