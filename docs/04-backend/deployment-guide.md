@@ -302,7 +302,7 @@ You can either:
 # Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/lecture-transcription-iot.git
+git clone https://github.com/Ayoo5/audionote
 ```
 
 Then navigate into the repository:
