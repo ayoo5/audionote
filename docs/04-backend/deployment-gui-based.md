@@ -430,7 +430,7 @@ backend/autotranscribe
 Deploy:
 
 ```bash
-gcloud run deploy autotranscribe-service \
+gcloud run deploy autoTranscribeOnUpload \
   --source . \
   --region us-central1 \
   --allow-unauthenticated
@@ -468,7 +468,7 @@ Open:
 | Event Type     | Object Finalized       |
 | Bucket         | audionote-recordings   |
 | Destination    | Cloud Run              |
-| Service        | autotranscribe-service |
+| Service        | autoTranscribeOnUpload |
 
 ---
 
@@ -567,6 +567,180 @@ Transcript Generated
 | Trigger activates    | Successful      |
 | Transcript generated | Successful      |
 | No backend crashes   | Stable          |
+
+---
+
+# Important Engineering Note — Backend Integration & Debugging
+
+The backend deployment and integration stage is the most technically demanding part of the Audionote system.
+
+This stage combines multiple distributed systems simultaneously:
+
+- embedded firmware,
+- cloud infrastructure,
+- event-driven backend triggers,
+- asynchronous uploads,
+- authentication systems,
+- transcription APIs,
+- and storage automation.
+
+Because of this, it is completely normal to encounter:
+- deployment errors,
+- permission issues,
+- upload failures,
+- API configuration problems,
+- trigger failures,
+- authentication mismatches,
+- or inconsistent backend behavior during development.
+
+---
+
+# Expect Significant Debugging
+
+Unlike simple frontend or static software projects, Audionote is a full-stack embedded cloud system.
+
+A single issue may originate from:
+- firmware configuration,
+- incorrect backend endpoints,
+- bucket permissions,
+- IAM roles,
+- malformed uploads,
+- transcription configuration,
+- or trigger automation.
+
+Debugging often requires:
+- reading logs carefully,
+- testing incrementally,
+- isolating subsystems,
+- and validating one stage at a time.
+
+Patience and perseverance are extremely important during this stage.
+
+---
+
+# Recommended Development Strategy
+
+Avoid changing multiple systems simultaneously.
+
+Instead:
+
+```text
+Validate Firmware
+        ↓
+Validate Upload
+        ↓
+Validate Bucket Storage
+        ↓
+Validate Trigger Activation
+        ↓
+Validate Transcription
+        ↓
+Validate Shared Drive Integration
+```
+
+This makes debugging significantly easier.
+
+---
+
+# Reading Backend Logs
+
+Cloud logs are one of the most important debugging tools during development.
+
+Useful command:
+
+```bash
+gcloud functions logs read autoTranscribeOnUpload --gen2 --region=europe-west1
+```
+
+This can help diagnose:
+- trigger failures,
+- backend crashes,
+- permission problems,
+- transcription issues,
+- and deployment errors.
+
+---
+
+# Google Cloud Logging Console
+
+You can also inspect logs visually through the Google Cloud console:
+
+* [Google Cloud Logging Console](https://console.cloud.google.com/logs?utm_source=chatgpt.com)
+
+Useful for:
+- real-time debugging,
+- filtering backend events,
+- and monitoring deployment behavior.
+
+---
+
+# Using Built-In Gemini AI Chat side panel
+
+Google Cloud Platform (GCP) console includes built-in AI assistance which can help explain:
+- deployment errors,
+- terminal issues,
+- IAM problems,
+- Node.js errors,
+- and Cloud Run failures.
+
+Shortcut:
+
+```text
+Alt + G
+```
+
+This opens the integrated AI assistance panel.
+
+This can be surprisingly useful for:
+- interpreting logs,
+- understanding error messages,
+- and troubleshooting deployment problems during development.
+
+---
+
+# Important Mindset During Development
+
+Large engineering systems rarely work perfectly on the first deployment.
+
+The debugging process itself is part of the engineering experience.
+
+Working through:
+- infrastructure problems,
+- firmware integration issues,
+- asynchronous backend behavior,
+- and cloud deployment challenges
+
+develops valuable real-world systems engineering skills.
+
+---
+
+# Recommended Best Practices
+
+| Best Practice | Why It Helps |
+|---|---|
+| Test incrementally | Easier debugging |
+| Read logs frequently | Faster issue isolation |
+| Validate one subsystem at a time | Prevents cascading failures |
+| Use small test recordings initially | Reduces upload complexity |
+| Keep backup firmware versions | Easier rollback |
+| Document working configurations | Prevents regression |
+
+---
+
+# Engineering Reality
+
+Backend-cloud integration for embedded systems can sometimes take longer to debug than building the hardware itself.
+
+This is normal.
+
+Successfully integrating:
+- firmware,
+- storage systems,
+- cloud infrastructure,
+- event automation,
+- and transcription pipelines
+
+is already a strong demonstration of practical engineering capability.
 
 ---
 
