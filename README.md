@@ -255,10 +255,23 @@ This stage includes:
 - Storage bucket configuration
 - IAM permissions configuration
 
-Continue to:
+## Backend Deployment
 
-→ [Backend Deployment Guide](docs/04-backend/deployment-guide.md)
+Choose your preferred deployment workflow:
 
+### Option 1 — GUI-Based Deployment (Recommended for Beginners)
+
+Step-by-step Google Cloud Console deployment using mostly the graphical interface.
+
+→ [GUI Backend Deployment Guide](docs/04-backend/deployment-gui-based.md)
+
+---
+
+### Option 2 — CLI-Based Deployment
+
+Terminal-based deployment using gcloud and Cloud Shell.
+
+→ [CLI Backend Deployment Guide](docs/04-backend/deployment-guide.md)
 
 ## Stage 6 — Shared Drive & Domain Configuration
 
