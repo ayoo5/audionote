@@ -577,7 +577,7 @@ GOOGLE_CLOUD_PROJECT=your-project-id
 # Deploy Service
 
 ```bash id="wyxjlwm"
-gcloud run deploy autotranscribe-service \
+gcloud run deploy autoTranscribeOnUpload \
   --source . \
   --region europe-west1 \
   --allow-unauthenticated
@@ -757,7 +757,7 @@ Cloud logs are one of the most important debugging tools during development.
 Useful command:
 
 ```bash
-gcloud functions logs read autoTranscribe --gen2 --region=europe-west1
+gcloud functions logs read autoTranscribeOnUpload --gen2 --region=europe-west1
 ```
 
 This can help diagnose:
