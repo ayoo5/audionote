@@ -278,7 +278,7 @@ You can either:
 # Option 1 — Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/lecture-transcription-iot.git
+git clone https://github.com/Ayoo5/audionote
 ```
 
 ---
