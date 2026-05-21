@@ -1,4 +1,4 @@
-# Backend Deployment Guide
+# Backend Deployment Guide (CLI-heavy)
 
 This section documents the deployment and configuration workflow for the Audionote cloud backend infrastructure.
 
@@ -82,7 +82,43 @@ Basic familiarity with:
 * terminal usage,
 * and Google Cloud Platform
 
-is recommended.
+is recommended. I got by with none so don't worry. 😃
+
+---
+
+# Google Cloud Free Credits for New Accounts
+
+Google Cloud typically provides free credits for new accounts which can be used during development and testing.
+
+At the time of writing, new users may receive promotional credits after:
+- creating a Google Cloud account,
+- enabling billing,
+- and verifying payment information.
+
+This is usually sufficient for:
+- Cloud Run deployment,
+- Storage usage,
+- Speech-to-Text testing,
+- and backend experimentation during development.
+
+Learn more:
+
+- :contentReference[oaicite:0]{index=0}
+
+---
+
+# Important Note About Billing
+
+Even when using free credits:
+
+- billing must still be enabled,
+- APIs may still require activation,
+- and usage limits still apply.
+
+To avoid unexpected charges:
+- monitor usage regularly,
+- configure billing alerts,
+- and test with short recordings initially.
 
 ---
 
@@ -158,6 +194,8 @@ Then:
 ```bash id="djlwm4"
 gcloud config set project YOUR_PROJECT_ID
 ```
+
+Replace the place holder with your project ID. You can find this in your project selector or even i the CLI.
 
 ---
 
@@ -250,6 +288,162 @@ lectures/
 
 ---
 
+# Stage 4.5 — Obtain the Backend Source Code
+
+Before deployment, ensure the Audionote backend source code is available locally.
+
+You can either:
+
+- clone the full repository,
+- or download the repository ZIP or specific files/folders from GitHub.
+
+---
+
+# Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/lecture-transcription-iot.git
+```
+
+Then navigate into the repository:
+
+```bash
+cd lecture-transcription-iot
+```
+
+---
+
+# Alternative: Manual Backend File Upload
+
+If you do not want to clone the full repository, you can manually download the backend folders and upload them into your Google Cloud environment.
+
+Required backend folders:
+
+```text
+backend/
+├── signedurl/
+└── autotranscribe/
+```
+
+Each folder should contain:
+
+```text
+index.js
+package.json
+```
+
+and any additional configuration files used in the project.
+
+---
+
+# Recommended Upload Methods
+
+## Option 1 — Upload Using Google Cloud Shell
+
+Open:
+
+* [Google Cloud Shell](https://console.cloud.google.com/cloudshell?utm_source=chatgpt.com)
+
+Then:
+
+1. Create backend directories:
+
+```bash
+mkdir -p backend/signedurl
+mkdir -p backend/autotranscribe
+```
+
+2. Upload files manually using the Cloud Shell upload button
+
+3. Verify uploaded files:
+
+```bash
+ls backend/signedurl
+ls backend/autotranscribe
+```
+
+---
+
+## Option 2 — Upload Using Cloud Shell Editor
+
+Open:
+
+* [Google Cloud Shell](https://console.cloud.google.com/shell?utm_source=chatgpt.com)
+
+Then:
+
+1. Open the Cloud Shell Editor
+2. Create backend folders manually
+3. Drag and drop the backend files into the editor workspace
+4. Open terminal and install dependencies
+
+---
+
+# Recommended Validation
+
+Before deployment, verify:
+
+| Validation Item | Expected Result |
+|---|---|
+| index.js exists | Yes |
+| package.json exists | Yes |
+| npm install completes | Successful |
+| No missing dependencies | Successful |
+
+---
+
+# Backend Directory Structure
+
+```text
+backend/
+├── signedurl/
+│     ├── index.js
+│     └── package.json
+│
+└── autotranscribe/
+      ├── index.js
+      └── package.json
+```
+
+---
+
+# Backend Services Overview
+
+| Service | Purpose |
+|---|---|
+| signedurl | Generates secure upload URLs for ESP32 uploads |
+| autotranscribe | Processes uploaded WAV files and generates transcripts |
+
+---
+
+# Recommended Validation
+
+Before deployment:
+
+1. Verify all backend files exist
+2. Verify Node.js is installed
+3. Verify npm is installed
+
+Check versions:
+
+```bash
+node --version
+npm --version
+```
+
+---
+
+# Install Node.js (If Necessary)
+
+Official download page:
+
+- :contentReference[oaicite:2]{index=2}
+
+Recommended:
+- Use the latest LTS release
+
+---
+
 # Stage 5 — Deploy Signed URL Backend
 
 This backend service:
@@ -300,9 +494,11 @@ Example deployment command:
 ```bash id="m1j4hj"
 gcloud run deploy signedurl-service \
   --source . \
-  --region us-central1 \
+  --region us-central1 \ 
   --allow-unauthenticated
 ```
+
+For builders within Nigeria, the nearest region server is in "europe-west1". Replace the "us-central1" with this.
 
 ---
 
@@ -333,7 +529,7 @@ Test endpoint accessibility in browser or Postman.
 Update firmware configuration:
 
 ```cpp id="8jm1j0"
-#define SIGNED_URL_ENDPOINT "https://your-cloud-run-url.run.app"
+const char *backendUrl = "https://your-cloud-run-url.run.app";  // Your GCF endpoint
 ```
 
 Re-upload firmware after modification.
@@ -383,7 +579,7 @@ GOOGLE_CLOUD_PROJECT=your-project-id
 ```bash id="wyxjlwm"
 gcloud run deploy autotranscribe-service \
   --source . \
-  --region us-central1 \
+  --region europe-west1 \
   --allow-unauthenticated
 ```
 
