@@ -379,7 +379,13 @@ The enclosure should:
 
 Below are pictures of the initial Prototype in a pattress that would be useful for you to know how to position and structure the different components of your audionote system into the pattress.
 
-// include table of pictures here...
+<div align="center">
+
+| Top View | ... |
+| :--------: | :--------: |
+| <img src="docs/08-assets/demo-photos/Audionote Stage 2 Development.jpg" width="200" height="250">    | <img src="docs/08-assets/demo-photos/Enclosed Audionote Device.jpeg" width="200" height="250">   |
+
+</div>
 
 Also, here is a diagram showing how different components were positioned within the pattress:
 
