@@ -391,7 +391,7 @@ Below are pictures of the initial Prototype in a pattress that would be useful f
 
 Also, here is a diagram showing how different components were positioned within the pattress:
 
-// include the pattress diagram here...
+<img src="/docs/08-assets/diagrams/Audionote in Pattress Diagram.png">
 
 You can also find the 3d printable files here:
 
