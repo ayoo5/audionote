@@ -280,6 +280,199 @@ Transcript Generated
 
 ---
 
+# Optional Backend Isolation Test — Manual Audio Upload
+
+While testing the complete ESP32 upload workflow, it is recommended to validate the backend pipeline independently by manually uploading a WAV audio file directly into the Cloud Storage bucket.
+
+This helps isolate backend functionality from firmware-related issues.
+
+I found this especially useful when one of my longest duration recordings (20 mins) was cut off by the Wi-Fi instability and didn't fully upload to the backend. It would have been a chore to try to record the whole 20 minutes again so I opted to manually upload it to the backend.
+
+---
+
+# Why This Test Is Important
+
+If the backend pipeline works correctly with a manually uploaded audio file, then:
+- Cloud Storage is configured correctly,
+- triggers are functioning,
+- transcription services are operational,
+- and Shared Drive integration is likely working properly.
+
+This significantly simplifies debugging because:
+- firmware upload issues can then be isolated independently.
+
+---
+
+# Recommended Testing Workflow
+
+```text
+Manual WAV Upload
+        ↓
+Cloud Storage Trigger Fires
+        ↓
+Auto-Transcription Backend Executes
+        ↓
+Transcript Generated
+        ↓
+Shared Drive Updated
+```
+
+---
+
+# Step 1 — Prepare a Test WAV File
+
+Use:
+- a short lecture recording,
+- microphone sample,
+- or exported WAV file.
+
+Recommended:
+- short duration initially (10–30 seconds),
+- mono audio,
+- WAV format,
+- and speech-focused content.
+
+---
+
+# Recommended Audio Properties
+
+| Parameter | Recommendation |
+|---|---|
+| Format | WAV |
+| Encoding | LINEAR16 |
+| Channels | Mono |
+| Duration | 10–30 seconds initially |
+
+---
+
+# Step 2 — Open the Cloud Storage Bucket
+
+Open:
+
+- :contentReference[oaicite:0]{index=0}
+
+Then:
+1. Open:
+   ```text
+   audionote-recordings
+   ```
+2. Navigate into the desired upload folder
+
+Example:
+
+```text
+lectures/test-session/
+```
+
+---
+
+# Step 3 — Upload the WAV File
+
+Inside the bucket:
+
+1. Click:
+   ```text
+   UPLOAD FILES
+   ```
+2. Select the WAV file
+3. Wait for upload completion
+
+---
+
+# Expected Backend Behavior
+
+Once upload completes:
+
+```text
+Cloud Storage Detects Upload
+        ↓
+Eventarc Trigger Fires
+        ↓
+Auto-Transcription Backend Starts
+        ↓
+Speech-to-Text Processes Audio
+        ↓
+Transcript Generated
+```
+
+---
+
+# Step 4 — Monitor Backend Logs
+
+Useful debugging command:
+
+```bash
+gcloud functions logs read autoTranscribeOnUpload --gen2 --region=europe-west1
+```
+
+This helps confirm:
+- trigger activation,
+- backend execution,
+- and transcription processing.
+
+---
+
+# Google Cloud Logging Console
+
+You can also inspect logs visually:
+
+- :contentReference[oaicite:1]{index=1}
+
+---
+
+# Step 5 — Validate Generated Outputs
+
+Verify:
+
+| Validation Item | Expected Result |
+|---|---|
+| WAV exists in bucket | Successful |
+| Trigger activates | Successful |
+| Backend executes | Successful |
+| Transcript generated | Successful |
+| Shared Drive updated | Successful |
+
+---
+
+# Important Engineering Advantage
+
+This testing method is extremely useful because it separates:
+
+| System | Validation Focus |
+|---|---|
+| Backend infrastructure | Cloud functionality |
+| ESP32 firmware | Embedded upload logic |
+
+This makes debugging significantly easier.
+
+---
+
+# Recommended Debugging Strategy
+
+Always validate:
+1. backend infrastructure first,
+2. then firmware uploads second.
+
+This prevents:
+- debugging multiple failure points simultaneously,
+- and significantly reduces development complexity.
+
+---
+
+# Recommended Development Mindset
+
+When working on distributed embedded systems:
+- isolate subsystems,
+- validate incrementally,
+- and avoid debugging the entire architecture at once.
+
+This is standard engineering practice in:
+- IoT systems,
+- cloud-connected embedded devices,
+- and distributed automation systems.
+
+---
+
 # Recommended Validation
 
 | Test                 | Expected Result |
