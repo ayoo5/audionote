@@ -610,7 +610,7 @@ Potential future system improvements:
 | Upgrade                 | Purpose                      |
 | ----------------------- | ---------------------------- |
 | OTA Firmware Updates    | Remote firmware management   |
-| Advanced STT Model Integration| Live transcription     |
+| Advanced STT Model Integration| Improved transcription     |
 | PCB Version             | Cleaner production design    |
 | Battery Monitoring      | Improved portability         |
 | Speaker Diarization     | Multi-speaker identification |
