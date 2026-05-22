@@ -381,11 +381,13 @@ Below are pictures of the initial Prototype in a pattress that would be useful f
 
 <div align="center">
 
-| Top View | R Side View <br> (With holes Mic wires & Button) | L Side View <br> (With slots for SD Card, <br> TP4056 charging port (upwards), <br> and Power Switch) | Enclosed Top View | During Development View |
+| Top View | R Side View <br> (With holes Mic wires & Button) | L Side View <br> (With slots for SD Card, <br> TP4056 charging port (upwards), and Power Switch) | Enclosed Top View | During Development View |
 | :--------: | :--------: | :--------: | :--------: | :--------: |
 | <img src="/docs/08-assets/demo-photos/Plan View.jpeg" width="200" height="250">    | <img src="/docs/08-assets/demo-photos/Button Side Enclosed Audionote.jpeg" width="200" height="250"> | <img src="/docs/08-assets/demo-photos/Power Switch Side Enclosed Audionote.jpeg" width="200" height="250"> | <img src="/docs/08-assets/demo-photos/Enclosed Audionote Device.jpeg" width="200" height="250"> | <img src="/docs/08-assets/demo-photos/Top View of Audionote.jpeg" width="200" height="250"> |
 
 </div>
+
+* You can click the pictures for a wider view of each.
 
 Also, here is a diagram showing how different components were positioned within the pattress:
 
