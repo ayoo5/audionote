@@ -107,6 +107,62 @@ The system is particularly useful for:
 12. Files become accessible through Shared Drive
 ```
 
+# Engineering Results Snapshot
+
+Audionote was experimentally evaluated under realistic classroom and network conditions using an ESP32-based asynchronous lecture transcription architecture.
+
+The system demonstrated stable operation across:
+- extended recording sessions,
+- cloud-based asynchronous transcription,
+- structured archival workflows,
+- and resumable upload recovery scenarios.
+
+---
+
+## Key Experimental Results
+
+| Metric | Observation |
+|---|---|
+| Audio Sampling Rate | Stable 16 kHz PCM acquisition |
+| Transcription Architecture | Asynchronous cloud-based pipeline |
+| Average WER | ~35% under classroom conditions |
+| Transcript Completeness | Typically 95–105% |
+| Storage Efficiency | ~1.9–2.0 MB/min |
+| Processing Throughput | Up to 2–5× real-time under favorable conditions |
+| Button Reliability | >93% consistency across ~100 trials |
+| File Organization | Structured timestamped archival successful |
+| Upload Reliability | Improved using resumable uploads |
+| System Stability | Stable extended operation observed |
+
+---
+
+## Key Engineering Observations
+
+- Cloud-based ASR improved transcription quality compared to fully edge-based processing.
+- Asynchronous transcription significantly reduced firmware complexity and memory pressure on the ESP32.
+- Resumable uploads improved fault tolerance during unstable network conditions.
+- Structured cloud archival improved retrieval and scalability.
+- Signal integrity was strongly influenced by microphone cable length and solder quality.
+
+---
+
+## Notable System Trade-offs
+
+| Design Choice | Trade-off |
+|---|---|
+| Cloud ASR | Better accuracy but network dependency |
+| Asynchronous Processing | Better stability but no real-time feedback |
+| ESP32-Based Design | Low-cost but resource constrained |
+| Wearable Form Factor | Better audio capture but tighter hardware integration |
+
+---
+
+## Reference
+
+Detailed experimental evaluation, metrics, formulas, and engineering analysis are documented in:
+
+→ [Engineering Analysis](docs/06-analysis/engineering-analysis.md)
+
 # Repository Structure
 
 ```text
