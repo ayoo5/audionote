@@ -384,6 +384,20 @@ If you significantly build upon this project:
 
 ---
 
+# Questions & Discussions
+
+For:
+- contributor discussions,
+- architecture questions,
+- or build showcases,
+
+feel free to reach out through:
+- GitHub Issues,
+- Discussions,
+- or the contact information listed in the main README.
+
+---
+
 # Related Documentation
 
 ## Firmware Overview
