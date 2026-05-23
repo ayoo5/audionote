@@ -456,3 +456,30 @@ The troubleshooting documentation also includes:
 - expected subsystem outputs,
 - debugging methodology,
 - and common failure recovery procedures.
+
+---
+
+# Contact & Project Updates
+
+If you recreate, improve, or extend Audionote, feel free to share your build, feedback, or ideas.
+
+I’d genuinely love to see:
+- recreated builds,
+- backend improvements,
+- enclosure redesigns,
+- PCB versions,
+- and transcription experiments.
+
+## Contact
+
+- Email: krestonayo5@gmail.com
+- LinkedIn: https://linkedin.com/in/chrisayo/
+- GitHub: https://github.com/Ayoo5
+
+## Sharing Your Build
+
+If you share your recreation publicly, consider tagging:
+- #AudionoteProject
+- #ESP32
+- #EmbeddedSystems
+- my social media handles. (Just search "Christopher Ayomide Popoola" to find them.)
