@@ -392,8 +392,3 @@ The troubleshooting documentation also includes:
 - expected subsystem outputs,
 - debugging methodology,
 - and common failure recovery procedures.
-
-Continue to:
-
-→ [General Troubleshooting Guide](docs/07-testing/troubleshooting.md)
-
