@@ -143,7 +143,13 @@ Before enclosure integration:
 
 Power the device and perform a short recording test.
 
----
+### Major Note:
+
+* After full assembly, I noticed that I needed to scratch between the SD card solder connection lines on the main veroboard. I think this is due to cross talking of the SD communication lines even though I verified zero continuity between the soldering connection lines.
+
+* I also noticed that the INMP441 microphone sometimes wasn't outputting the right data despite verifying that the right connections were made and continuity. I found that tying the microphone connection wires closely to each other solved this.
+
+  This is some form of noise cancellation, shielding, or signal integrity management. By bundling or twisting your I2S wires (especially clock and data lines) together, you effectively create a rudimentary shielded twisted pair. This technique reduces electromagnetic interference (EMI) and cross-talk, ensuring the digital signals stay clean. 
 
 # Recording Validation Workflow
 
