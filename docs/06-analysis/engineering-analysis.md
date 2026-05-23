@@ -67,7 +67,7 @@ The engineering analysis utilized a reference transcript dataset to compare:
 
 # Reference Transcript Resource
 
-→ [Reference Transcript Dataset](../06-analysis/Reference Transcript.md)
+→ [Reference Transcript Dataset](/docs/06-analysis/Reference Transcript.md)
 
 This dataset was used for:
 
