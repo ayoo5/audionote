@@ -143,13 +143,17 @@ Before enclosure integration:
 
 Power the device and perform a short recording test.
 
-### Major Note:
+### Major Notes:
 
 * After full assembly, I noticed that I needed to scratch between the SD card solder connection lines on the main veroboard. I think this is due to cross talking of the SD communication lines even though I verified zero continuity between the soldering connection lines.
 
 * I also noticed that the INMP441 microphone sometimes wasn't outputting the right data despite verifying that the right connections were made and continuity. I found that tying the microphone connection wires closely to each other solved this.
 
-  This is some form of noise cancellation, shielding, or signal integrity management. By bundling or twisting your I2S wires (especially clock and data lines) together, you effectively create a rudimentary shielded twisted pair. This technique reduces electromagnetic interference (EMI) and cross-talk, ensuring the digital signals stay clean. 
+  This is some form of noise cancellation, shielding, or signal integrity management. By bundling or twisting your I2S wires (especially clock and data lines) together, you effectively create a rudimentary shielded twisted pair. This technique reduces electromagnetic interference (EMI) and cross-talk, ensuring the digital signals stay clean.
+
+* In my hardware development, I used long female-to-male jumper wires. I initially tried connecting different wires to make it long enough for the main device to be attached somewhere around the waist, while the mic be positioned at the collar side, all to fit the originally intended form factor. I found out two things:
+  1. Many jumper wires in the collections don't work well. Test for continuity before use them in your connections, especially the permanent ones.
+  2. The signals found it hard to transmit to the ESP 32 board. However, I know a fellow innovator who built a keyword speech to text recognition system for some short phrase commands using Raspbery Pi 3 (I think) and he did have very long wires connected to his INMP441 mic. I didn't verify again whether the long wires would work for mine. You can try verifying and share your feedback.
 
 # Recording Validation Workflow
 
