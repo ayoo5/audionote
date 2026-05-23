@@ -2,7 +2,7 @@
 
 This document explains the physical architecture, subsystem design, and engineering considerations behind the Audionote hardware system.
 
-
+<img src="/docs/08-assets/diagrams/Hardware Block Diagram.png" alt="Hardware Block Diagram"/>
 
 The hardware layer is responsible for:
 
