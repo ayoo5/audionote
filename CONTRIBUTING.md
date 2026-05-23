@@ -86,7 +86,7 @@ Submit Pull Request
 Clone the repository:
 
 ```bash id="jlwm1a"
-git clone https://github.com/Ayoo5/audionote.git
+git clone https://github.com/Ayoo5/audionote
 ```
 
 Enter the project directory:
