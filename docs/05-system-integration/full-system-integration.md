@@ -839,7 +839,7 @@ Potential contribution areas include:
 
 Continue to:
 
-→ [Contribution Guidelines](../CONTRIBUTING.md)
+→ [Contribution Guidelines](/CONTRIBUTING.md)
 
 ---
 
@@ -849,6 +849,6 @@ Once full system integration is validated successfully:
 
 Continue to:
 
-→ [Engineering Analysis](../07-analysis/engineering-analysis.md)
+→ [Engineering Analysis](../06-analysis/engineering-analysis.md)
 
 ---
