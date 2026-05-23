@@ -837,6 +837,10 @@ Potential contribution areas include:
 * UI dashboards,
 * and mechanical design improvements.
 
+Continue to:
+
+→ [Contribution Guidelines](../CONTRIBUTING.md)
+
 ---
 
 # Recommended Next Step
