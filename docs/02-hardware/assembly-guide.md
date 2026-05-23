@@ -182,6 +182,8 @@ Verify your firmware pin configuration matches the physical wiring.
 
 * Use short wires where possible (for initial development).
 * Utilize just the esp 32 microcontroller and INMP441 mic setup on the breadboard with jumper wires connecting the metal ends in the breadboard for inital development like in the development demo image shown above.
+* I noticed that the INMP441 microphone sometimes wasn't outputting the right data, despite verifying that the right connections were made and continuity. I found that tying the microphone connection wires together closely solved this.
+* Many jumper wires in the collections don't work well. Test for continuity before use them in your connections, especially the permanent ones.
 * Avoid running audio lines near noisy power wiring
 * Ensure stable 3.3V supply
 * Ground integrity is extremely important for clean audio
