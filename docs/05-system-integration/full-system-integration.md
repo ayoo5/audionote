@@ -598,7 +598,7 @@ Also, here is a diagram showing how different components were positioned within 
 
 You can also find the 3d printable files here:
 
-→ [3D Printable Files](../08-assets/3d-models/) designed by a friend, [Elias](https://github.com/buildwithelias)
+→ [3D Printable Files](/hardware/enclosure) designed by a friend, [Elias](https://github.com/buildwithelias)
 
 ---
 
