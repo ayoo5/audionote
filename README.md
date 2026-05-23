@@ -366,7 +366,7 @@ This stage includes:
 
 - Internal component mounting
 - Cable management
-- Enclosure assembly
+- [Enclosure assembly](/hardware/enclosure) designed by a friend, [Elias](https://github.com/buildwithelias)
 - Thermal considerations
 - Wearable mounting system integration
 - Final operational testing
