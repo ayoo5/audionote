@@ -2,6 +2,8 @@
 
 This document explains the architecture, operational flow, and engineering decisions behind the Audionote firmware system.
 
+<img src="/docs/08-assets/diagrams/Firmware Pipleine.png" alt="Firmware Pipeline"/>
+
 The firmware is responsible for:
 
 * audio acquisition,
