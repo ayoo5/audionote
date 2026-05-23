@@ -678,18 +678,6 @@ Long recordings help validate:
 
 ---
 
-# Recommended Metrics to Monitor
-
-| Metric              | Why It Matters              |
-| ------------------- | --------------------------- |
-| Upload latency      | Backend responsiveness      |
-| RAM usage           | ESP32 stability             |
-| Recording duration  | File integrity              |
-| Battery runtime     | Portability                 |
-| Transcription delay | Cloud processing efficiency |
-
----
-
 # Stage 9 — Final System Validation
 
 Perform complete end-to-end workflow tests. Multiple ones. Log them in a Google Sheet file.
