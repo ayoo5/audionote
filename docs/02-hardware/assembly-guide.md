@@ -360,6 +360,7 @@ Expected result:
 * Strictly avoid hot wiring the SD Card while it is being powered. Hot-wiring or pulling an SD card while it is powered poses severe risks to your hardware and data. The practice bypasses safe hardware handshakes and can trigger critical faults.
 *  The module may briefly pause operation after several write cycles while the SD card's internal controller erases flash pages. When tis occurs, briefly stop testing or replace with another SD Card module.
 *  Make sure the (temporary) jumper connections are good and tight as the pins of the SD card module are sensitive. If not connected well, audio files would be corrupted.
+*  After full assembly, I noticed that I needed to scratch between the SD card solder connection lines on the main veroboard. I think this is due to cross-talk of the SD communication lines even though I verified zero continuity between the soldering connection lines.
 
 ---
 
