@@ -387,7 +387,7 @@ can also be used for:
 
 # Enclosure Resources
 
-→ [3D Models](.../hardware/enclosure)
+→ [3D Models](..../hardware/enclosure)
 
 ---
 
