@@ -2,6 +2,8 @@
 
 This document explains the architecture, design philosophy, and operational flow of the Audionote backend infrastructure.
 
+<img src="/docs/08-assets/diagrams/Backend Pipeline.png" alt="Backend Pipeline"/>
+
 The backend system is responsible for:
 
 * securely receiving uploaded lecture recordings,
