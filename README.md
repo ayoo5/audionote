@@ -234,6 +234,10 @@ This stage includes:
 
 Continue to:
 
+→ [Firmware Overview](docs/03-firmware/firmware-overview.md)
+
+And then:
+
 → [Firmware Setup](docs/03-firmware/esp32-setup.md)
 
 
@@ -310,6 +314,10 @@ This stage includes:
 - Auto-transcription service setup
 - Storage bucket configuration
 - IAM permissions configuration
+
+Continue to:
+
+→ [Backend Overview](docs/04-backend/backend-overview.md)
 
 ## Backend Deployment
 
