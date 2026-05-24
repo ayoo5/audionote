@@ -8,7 +8,7 @@ The goal of this analysis is to:
 * measure performance characteristics,
 * identify system limitations,
 * validate architecture decisions,
-* and provide reproducible engineering data for future contributors and researchers.
+* and document system behavior observed during development.
 
 This section also documents the workflow used to:
 
@@ -55,7 +55,7 @@ Performance Evaluation
 
 ---
 
-# Reference Transcript Dataset
+# Sample Validation Transcripts
 
 The engineering analysis utilized a reference transcript dataset to compare:
 
@@ -69,11 +69,7 @@ The engineering analysis utilized a reference transcript dataset to compare:
 
 → [Reference Transcript Dataset](/docs/06-analysis/Reference%20Transcript.md)
 
-This dataset was used for:
-
-* validation,
-* comparison,
-* and performance consistency checks.
+These sample transcripts were used for informal consistency checks and engineering evaluation during development.
 
 ---
 
@@ -159,8 +155,6 @@ Backend Logs
 Metadata Extraction Script
         ↓
 Google Sheets Export
-        ↓
-Gemini-Assisted Analysis
 ```
 
 ---
@@ -420,45 +414,7 @@ Create a spreadsheet for:
 
 ---
 
-# Using Gemini Inside Google Sheets
-
-Google Sheets includes Gemini AI integration in supported Workspace environments.
-
-Gemini can help:
-
-* generate formulas,
-* analyze datasets,
-* compute derived columns,
-* and assist with engineering observations.
-
----
-
-# Gemini in Sheets Documentation
-
-* [Gemini in Google Workspace Documentation](https://support.google.com/docs/answer/13594961?utm_source=chatgpt.com)
-
----
-
-# Useful Gemini Workflow
-
-The Gemini side panel can assist with:
-
-* generating formulas,
-* summarizing trends,
-* calculating metrics,
-* and identifying anomalies.
-
----
-
-# Recommended Manual Validation Workflow
-
-Even when using Gemini assistance:
-
-* manually validate generated formulas,
-* verify timestamp formatting,
-* and inspect unusual outliers carefully.
-
-AI assistance should support analysis — not replace engineering validation.
+* Optional: Using Gemini Inside Google Sheets. It can help to: generate formulas, analyze datasets, compute derived columns, and assist with engineering observations.
 
 ---
 
@@ -547,9 +503,7 @@ Multiplication converts:
 
 # 4. Throughput (Seconds)
 
-Throughput measures:
-
-* overall end-to-end processing time.
+This metric helps estimate how quickly the system processes recordings relative to recording duration.
 
 Example formula:
 
@@ -628,7 +582,7 @@ Useful charts include:
 
 ---
 
-# Recommended Experimental Workflow
+# Recommended Testing Workflow
 
 ```text id="jlwm5w"
 Short Recordings
@@ -666,7 +620,3 @@ Recommended durations:
 ## Google Sheets Documentation
 
 * [Google Sheets Documentation](https://support.google.com/docs?utm_source=chatgpt.com)
-
-## Gemini in Workspace Documentation
-
-* [Gemini in Google Workspace Documentation](https://support.google.com/docs/answer/13594961?utm_source=chatgpt.com)
